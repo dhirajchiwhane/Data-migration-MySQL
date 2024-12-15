@@ -31,11 +31,12 @@ def data_migrate():
 
         query = "select * from sbi_bank_customers"
         df = pd.read_sql(query, mysql_conn)
+        logging.info("succefully read data from Mysql")
         df.to_sql("sbi_cust_targt", sql_server_conn, if_exists='replace', index=False)
         logging.info("Data successfully transfer to  mysql database")
         mysql_conn.close()
         sql_server_conn.close()
-        logging.info("connection close")
+        logging.info(" connection close")
         return True
     except Exception as e:
         print(f"Error :{e}")
@@ -47,7 +48,9 @@ def send_mail(status):
         g_cred = json.load(g_fp)
     passward = f"{g_cred['apppass']}"
     sender_email = "chiwhane.d@gmail.com"
+    logging.info("reading sender email")
     reciver_email = "dhirajchiwhane08@gmail.com"
+    logging.info("eading reciver email")
 
     subject = " Data Migration Status"
 

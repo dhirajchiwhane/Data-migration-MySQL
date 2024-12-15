@@ -1,5 +1,8 @@
-INFO:15:Dec:24 21:15:05:root:Successfully connect mysql database
-INFO:15:Dec:24 21:15:05:root:Successfully connect sql_server database
-INFO:15:Dec:24 21:15:33:root:Data successfully transfer to  mysql database
-INFO:15:Dec:24 21:15:33:root:connection close
-INFO:15:Dec:24 21:15:33:root:Successfully send mail
+INFO:15:Dec:24 21:53:33:root:Successfully connect mysql database
+INFO:15:Dec:24 21:53:33:root:Successfully connect sql_server database
+INFO:15:Dec:24 21:53:34:root:succefully read data from Mysql
+INFO:15:Dec:24 21:54:55:root:Data successfully transfer to  mysql database
+INFO:15:Dec:24 21:54:55:root: connection close
+INFO:15:Dec:24 21:54:55:root:reading sender email
+INFO:15:Dec:24 21:54:55:root:eading reciver email
+INFO:15:Dec:24 21:54:55:root:Successfully send mail
